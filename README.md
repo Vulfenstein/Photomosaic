@@ -14,8 +14,8 @@ through each grid item and finds best replacement out of the input images. A K-D
 </p>
 
 <p float="center">
-  <img src="target-images/NYC.jpg" width = "240" height = "490" />
-  <img src="results/NYCmosaic.png" width = "240" height = "490" />
+  <img src="target-images/NYC.jpg" width = "300" height = "490" />
+  <img src="results/NYCmosaic.png" width = "300" height = "490" />
 </p>
 
 ## Usage
