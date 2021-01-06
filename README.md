@@ -7,5 +7,5 @@ through each grid item and finds best replacement out of the input images. A K-D
 
 <p float="center">
   <img src="target-images/MonaLisa.jpg" width = "240" height = "490" />
-  <img src="results/MonaLisaMosaic.jpg" width = "240" height = "490" />
-  <img src="results/MonaLisa100.jpg" width = "240" height = "490" />
+  <img src="results/MonaLisaMosaic.png" width = "240" height = "490" />
+  <img src="results/MonaLisa100.png" width = "240" height = "490" />
