@@ -1,7 +1,4 @@
-import sys, os, random, argparse
-from PIL import Image
-import imghdr
-import numpy as np
+
 # Return index of the best image match, based on average RGB value distances #
 
 def getBestMatchIndex(input_avg, avgs):

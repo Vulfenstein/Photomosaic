@@ -1,8 +1,3 @@
-import sys, os, random, argparse
-from PIL import Image
-import imghdr
-import numpy as np
-
 from getAverageRGB import getAverageRGB
 from splitImage import splitImage
 from getBestMatchIndex import getBestMatchIndex
@@ -11,7 +6,7 @@ from createImageGrid import createImageGrid
 
 def createPhotomosaic(target_image, input_images, grid_size, reuse_images=True):  
 
-    # split target image ino tiles
+    # split target image into tiles
     print('splitting input image...')
     target_images = splitImage(target_image, grid_size)
 

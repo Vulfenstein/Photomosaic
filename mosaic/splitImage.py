@@ -1,7 +1,4 @@
-import sys, os, random, argparse
-from PIL import Image
-import imghdr
-import numpy as np
+
 # Split target image into an MxN grid 
 
 def splitImage(image, size):

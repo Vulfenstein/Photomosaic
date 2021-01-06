@@ -1,6 +1,3 @@
-import sys, os, random, argparse
-from PIL import Image
-import imghdr
 import numpy as np
 # Return the average color value as (r,g,b) for each input image #
     

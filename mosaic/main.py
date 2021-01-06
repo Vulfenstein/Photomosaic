@@ -1,7 +1,6 @@
-import sys, os, random, argparse
+import random, argparse
 from PIL import Image
 import imghdr
-import numpy as np
 
 from getImages import getImages
 from createPhotomosaic import createPhotomosaic
