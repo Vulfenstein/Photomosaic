@@ -1,11 +1,11 @@
 # Photomosaic
 
-<p> Photomosaic - a large-scale detailed picture or map built up by combining photographs of small areas. </p>
+  <p> Photomosaic - a large-scale detailed picture or map built up by combining photographs of small areas. </p>
    
-<p> Program starts by taking target image and splits it into a grid. Then finds RGB color average of each input image. It then groes 
+  <p> Program starts by taking target image and splits it into a grid. Then finds RGB color average of each input image. It then groes 
 through each grid item and gets its average RGB value and finds best replacement out of the input images. A K-D Tree is used to find nearest neighbors index. </p>
 
-<p> User can decide grid size, resulting in more or less accurate photomosaic. As well as having the option of naming the newly created image. </p>
+  <p> User can decide grid size, resulting in more or less accurate photomosaic. As well as having the option of naming the newly created image. </p>
 
 ## Examples
 <p float="center">
@@ -20,7 +20,7 @@ through each grid item and gets its average RGB value and finds best replacement
 </p>
 
 ## Usage
-<p> main.py --target-image TARGET_IMAGE --input-folder INPUT_FOLDER --grid-size GRID_SIZE GRID_SIZE [--output-file OUTFILE] </p>
+  <p> main.py --target-image TARGET_IMAGE --input-folder INPUT_FOLDER --grid-size GRID_SIZE GRID_SIZE [--output-file OUTFILE] </p>
 
 ## Requirements
  * Pillow
