@@ -20,3 +20,8 @@ through each grid item and finds best replacement out of the input images. A K-D
 
 ## Usage
 <p> main.py --target-image TARGET_IMAGE --input-folder INPUT_FOLDER --grid-size GRID_SIZE GRID_SIZE [--output-file OUTFILE] </p>
+
+## Requirements
+ * Pillow
+ * Numpy
+ * Scipy
