@@ -1,7 +1,5 @@
-import sys, os, random, argparse
+import os
 from PIL import Image
-import imghdr
-import numpy as np
 # Given a directory of images, return list of images #
 
 def getImages(imageDir):

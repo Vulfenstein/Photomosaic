@@ -1,7 +1,5 @@
-import sys, os, random, argparse
 from PIL import Image
 import imghdr
-import numpy as np
 # Given a list of images and a grid size(m,n) create a grid of images
 
 def createImageGrid(images, dims):
