@@ -2,6 +2,8 @@ from getAverageRGB import getAverageRGB
 from splitImage import splitImage
 from getBestMatchIndex import getBestMatchIndex
 from createImageGrid import createImageGrid
+from scipy.spatial import KDTree as kdtree
+import numpy as np
 # Creates a photomosaic given target and input images
 
 def createPhotomosaic(target_image, input_images, grid_size, reuse_images=True):  
@@ -21,11 +23,15 @@ def createPhotomosaic(target_image, input_images, grid_size, reuse_images=True):
     for img in input_images:
         avgs.append(getAverageRGB(img))
 
+    # add input averages to k tree
+    im = np.array(avgs)
+    tree = kdtree(im)
+
     for img in target_images:
         # find average RGB value
         avg = getAverageRGB(img)
         # find closest match
-        match_index = getBestMatchIndex(avg, avgs)
+        match_index = getBestMatchIndex(avg, tree)
         output_images.append(input_images[match_index])
         # user feedback
         if count > 0 and batch_size > 10 and count % batch_size == 0:
@@ -33,6 +39,7 @@ def createPhotomosaic(target_image, input_images, grid_size, reuse_images=True):
         count += 1
         if not reuse_images:
             input_images.remove(match)
+
     print('creating mosaic...')
     mosaic_image = createImageGrid(output_images, grid_size)
 
