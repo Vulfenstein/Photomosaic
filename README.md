@@ -9,3 +9,6 @@ through each grid item and finds best replacement out of the input images. A K-D
   <img src="target-images/MonaLisa.jpg" width = "240" height = "490" />
   <img src="results/MonaLisaMosaic.png" width = "240" height = "490" />
   <img src="results/MonaLisa100.png" width = "240" height = "490" />
+
+## Usage
+<p> main.py --target-image TARGET_IMAGE --input-folder INPUT_FOLDER --grid-size GRID_SIZE GRID_SIZE [--output-file OUTFILE] </p>
